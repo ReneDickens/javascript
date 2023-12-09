@@ -1,0 +1,43 @@
+{
+  "name": "eslint-config-godaddy-react-typescript",
+  "version": "4.0.2",
+  "description": "ESLint config for consistent style in ES6 React projects using TypeScript at GoDaddy.",
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run --silent lint",
+    "test": "echo ok",
+    "clean": "rimraf node_modules",
+    "unused": "eslint-find-rules --unused ./index.js || echo ''"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:godaddy/javascript.git"
+  },
+  "keywords": [
+    "godaddy",
+    "javascript",
+    "styleguide",
+    "style-guide",
+    "eslint",
+    "es6",
+    "react",
+    "typescript"
+  ],
+  "bin": {
+    "eslint-godaddy-react-typescript": "bin/eslint-godaddy-react-typescript"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.59.1",
+    "@typescript-eslint/parser": "^5.59.1",
+    "eslint-config-godaddy-react": "^9.0.1",
+    "eslint-plugin-react-hooks": "^4.6.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=8",
+    "typescript": ">=3"
+  },
+  "devDependencies": {
+    "eslint": "^8.39.0"
+  }
+}

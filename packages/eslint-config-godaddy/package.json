@@ -1,0 +1,38 @@
+{
+  "name": "eslint-config-godaddy",
+  "version": "7.0.2",
+  "description": "Base ESLint config for consistent style in ES6 projects at GoDaddy.",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run --silent lint",
+    "test": "echo ok",
+    "clean": "rimraf node_modules",
+    "unused": "eslint-find-rules --unused ./index.js || echo ''"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:godaddy/javascript.git"
+  },
+  "keywords": [
+    "godaddy",
+    "javascript",
+    "styleguide",
+    "style-guide",
+    "eslint",
+    "es6"
+  ],
+  "bin": {
+    "eslint-godaddy": "bin/eslint-godaddy"
+  },
+  "peerDependencies": {
+    "eslint": ">=8"
+  },
+  "dependencies": {
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-mocha": "^10.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.39.0"
+  }
+}
